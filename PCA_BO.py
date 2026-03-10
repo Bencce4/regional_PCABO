@@ -257,20 +257,6 @@ def plot_target_precision_ci(tp_runs, func_id, out_dir, method_label="PCA-BO"):
     plt.close(fig)
 
 
-def is_feasible(z, bounds, mapper):
-    x = mapper(z)
-    if isinstance(bounds, (tuple, list)):
-        lb, ub = bounds
-    else:
-        lb, ub = bounds[0], bounds[1]
-    eps = 1e-8
-    lb = lb.to(dtype=x.dtype, device=x.device)
-    ub = ub.to(dtype=x.dtype, device=x.device)
-    feasible_mask = (x >= (lb - eps)) & (x <= (ub + eps))
-    feasible = feasible_mask.all(dim=-1)
-    return feasible
-
-
 def penalty(z, bounds, weight=1.0, mapper=None):
     x = mapper(z)
     if isinstance(bounds, (tuple, list)):
