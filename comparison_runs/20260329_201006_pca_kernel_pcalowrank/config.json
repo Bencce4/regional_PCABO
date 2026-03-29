@@ -1,0 +1,21 @@
+{
+  "base_seed": 12,
+  "baseline_model": "SingleTaskGP + LogExpectedImprovement + optimize_acqf",
+  "budget": 100,
+  "dim": 2,
+  "function_ids": [
+    2
+  ],
+  "grid_size": 120,
+  "kernel": {
+    "lengthscale_bounds": [
+      0.005,
+      4.0
+    ],
+    "nu": 2.5,
+    "type": "Matern"
+  },
+  "n0": 8,
+  "num_runs": 30,
+  "pca_backend": "torch.pca_lowrank"
+}

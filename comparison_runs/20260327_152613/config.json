@@ -1,0 +1,11 @@
+{
+  "base_seed": 12,
+  "budget": 100,
+  "dim": 2,
+  "function_ids": [
+    22
+  ],
+  "grid_size": 120,
+  "n0": 8,
+  "num_runs": 30
+}

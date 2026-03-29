@@ -1,0 +1,13 @@
+# Tested with Python 3.11.8
+numpy==1.26.4
+torch==2.1.0
+botorch==0.16.1
+gpytorch==1.15.1
+scipy==1.11.4
+matplotlib==3.8.0
+ioh==0.3.18
+iohinspector==0.0.6
+
+# Legacy / standalone scripts
+coco-experiment==2.8.2
+cma==4.4.4

@@ -358,7 +358,6 @@ def main():
         Z = np.array([plot_problem(p) for p in grid], dtype=float).reshape(grid_size, grid_size)
         contour_cache = {"X1": X1, "X2": X2, "Z": Z, "lb": lb_np, "ub": ub_np}
 
-        # 2D approximation of optimum (dense grid min)
         f_opt = float(np.min(Z))
         tp_runs = []
         print(f"Running f{fid}: {num_runs} runs")
@@ -478,3 +477,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
