@@ -1,0 +1,62 @@
+{
+  "base_seed": 12,
+  "baseline_model": "SingleTaskGP + LogExpectedImprovement + optimize_acqf",
+  "budget": 500,
+  "dim": 20,
+  "dynamic_orthogonal_exploration_v2": {
+    "controller_rule": "mixed_space_rescoring_with_conservative_activation",
+    "local_subset_size": 40,
+    "mixed_m_take": 2,
+    "mixed_r_take": 2,
+    "orth_k_init": 1,
+    "orth_k_max": 4,
+    "orth_k_min": 1,
+    "orthogonal_cooldown": 4,
+    "sigma_scale_init": 0.02,
+    "sigma_scale_max": 0.1,
+    "sigma_scale_min": 0.0,
+    "sigma_scale_step": 0.01,
+    "stagnation_min_improve": 1e-08,
+    "stagnation_patience": 10,
+    "trigger_consecutive_required": 2,
+    "trigger_mode": "and",
+    "ubr_epsilon": 0.1,
+    "ubr_iqm_window": 7
+  },
+  "function_ids": [
+    2,
+    8,
+    22
+  ],
+  "grid_size": 120,
+  "kernel": {
+    "lengthscale_bounds": [
+      0.005,
+      4.0
+    ],
+    "nu": 2.5,
+    "type": "matern"
+  },
+  "n0": 8,
+  "num_runs": 30,
+  "parallel_functions": 3,
+  "pca_backend": "torch.pca_lowrank",
+  "runtime_logging": {
+    "clock": "time.perf_counter",
+    "per_function_csv": "f*/runtime_log.csv",
+    "per_seed_csv": "runtime_log.csv",
+    "summary_json": "runtime_summary.json"
+  },
+  "vanilla_pca_bo": {
+    "acquisition": "PEI",
+    "kernel": {
+      "lengthscale_bounds": [
+        0.005,
+        4.0
+      ],
+      "nu": 2.5,
+      "type": "Matern"
+    },
+    "notes": "Closest comparison to the original compare_bo.py PCA-BO implementation."
+  }
+}

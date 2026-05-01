@@ -1,0 +1,25 @@
+{
+  "8": {
+    "botorch_baseline": {
+      "max_seconds": 83.264357,
+      "mean_seconds": 77.05112896666667,
+      "median_seconds": 77.05067199999999,
+      "min_seconds": 70.234416,
+      "num_runs": 30
+    },
+    "pca_bo": {
+      "max_seconds": 1487.076331,
+      "mean_seconds": 939.4646411,
+      "median_seconds": 975.44997,
+      "min_seconds": 388.495776,
+      "num_runs": 30
+    },
+    "pca_bo_dynamic_orthogonal_v2": {
+      "max_seconds": 3455.478194,
+      "mean_seconds": 2158.9831727,
+      "median_seconds": 2193.2007350000003,
+      "min_seconds": 732.292351,
+      "num_runs": 30
+    }
+  }
+}
