@@ -10,4 +10,3 @@ iohinspector==0.0.6
 
 # Legacy / standalone scripts
 coco-experiment==2.8.2
-cma==4.4.4

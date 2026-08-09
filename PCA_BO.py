@@ -10,7 +10,10 @@ from gpytorch.mlls import ExactMarginalLogLikelihood
 from botorch.fit import fit_gpytorch_mll
 import random
 from botorch.models.transforms.outcome import Standardize
-import cocoex
+try:
+    import cocoex
+except ImportError:
+    cocoex = None
 import matplotlib.pyplot as plt
 from matplotlib import colors as mcolors
 from scipy.stats import qmc
@@ -477,4 +480,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    

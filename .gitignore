@@ -1,0 +1,68 @@
+# macOS and Python
+.DS_Store
+.venv/
+**/__pycache__/
+*.py[cod]
+
+# Generated experiment data and figures
+comparison_runs/
+figures/
+figures_runs/
+figures_weights/
+exdata/
+direct_logs/
+bo_logs_*/
+20260416_212519/
+IOHprofiler_*
+*.dat
+*.out
+*.err
+*.png
+
+# Local cluster and synchronization state
+cloud_sync/
+cloud_tasks/
+direct_tasks/
+gcp_pcabo_run/
+slurm_tasks/
+liacs_venv_trim_backup_*/
+liacs_root_logs_backup_*/
+*.sh
+*.sbatch
+
+# Local research material and generated documents
+.codex_pptx_review/
+tmp*/
+paper_assets/
+citation_audit_sources/
+thesis_figures/
+thesis_final_used_figures/
+defence_assets/
+An_Interesting_Title_for_a_Thesis/
+*.pdf
+*.pptx
+*.code-workspace
+*.scpt
+
+# Local notes and audits
+citation_audit.md
+rel-connect.md
+thesis_discussion_notes.md
+thesis_supervisor_comments.csv
+thesis_supervisor_comments.md
+final_defence_*.md
+midterm_presentation_*.md
+
+# Excluded development and visualization helpers
+scripts/
+PCA_BO_ivan.py
+PCABO_generated.py
+PCABO_timing_eps01.py
+playingwithBO.py
+random_try.py
+tune_dynamic_pcabo.py
+compare_bo_dynamic_orthogonal.py
+compare_bo_dynamic_orthogonal_three_way.py
+compare_bo_dynamic_orthogonal_turbo_v[1-4].py
+compare_bo_dynamic_orthogonal_v2_noise_viz.py
+compare_official_turbo_baseline.py
